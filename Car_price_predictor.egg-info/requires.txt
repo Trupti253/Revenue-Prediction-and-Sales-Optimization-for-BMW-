@@ -1,0 +1,13 @@
+numpy
+Flask
+gunicorn
+scikit-learn
+pandas
+PyYAML
+evidently
+dill
+matplotlib
+xgboost
+category_encoders
+boto3
+awscli

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Car-price-predictor
+Version: 0.0.1
+Summary: This is a Project to estimate Used Car prices
+Author: Aravind S
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: Flask
+Requires-Dist: gunicorn
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: PyYAML
+Requires-Dist: evidently
+Requires-Dist: dill
+Requires-Dist: matplotlib
+Requires-Dist: xgboost
+Requires-Dist: category_encoders
+Requires-Dist: boto3
+Requires-Dist: awscli

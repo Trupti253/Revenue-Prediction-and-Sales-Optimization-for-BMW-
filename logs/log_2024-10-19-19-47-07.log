@@ -1,0 +1,118 @@
+[2024-10-19 19:47:09,713]^;INFO^;97^;_internal.py^;_log()^;[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2024-10-19 19:47:09,713]^;INFO^;97^;_internal.py^;_log()^;[33mPress CTRL+C to quit[0m
+[2024-10-19 19:47:14,918]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:47:14] "GET / HTTP/1.1" 200 -
+[2024-10-19 19:47:14,984]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:47:14] "[32mGET /static//images/img.jpg HTTP/1.1[0m" 308 -
+[2024-10-19 19:47:15,222]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:47:15] "GET /static/images/img.jpg HTTP/1.1" 200 -
+[2024-10-19 19:47:16,370]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:47:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-10-19 19:47:25,081]^;INFO^;222^;configuration.py^;get_training_pipeline_config()^;Training pipleine config: TrainingPipelineConfig(artifact_dir='C:\\Users\\Asus\\Desktop\\FA\\PBL-5 BI TG\\used-car-price-prediction-using-ml-main\\carprice\\artifact')
+[2024-10-19 19:47:25,086]^;INFO^;112^;pipeline.py^;run_pipeline()^;Pipeline starting.
+[2024-10-19 19:47:25,086]^;INFO^;128^;pipeline.py^;run_pipeline()^;Pipeline experiment: Experiment(experiment_id='28015a64-f3d1-4894-b926-5ac64d52ca48', initialization_timestamp='2024-10-19-19-47-25', artifact_time_stamp='2024-10-19-19-47-25', running_status=True, start_time=datetime.datetime(2024, 10, 19, 19, 47, 25, 86031), stop_time=None, execution_time=None, message='Pipeline has been started.', experiment_file_path='C:\\Users\\Asus\\Desktop\\FA\\PBL-5 BI TG\\used-car-price-prediction-using-ml-main\\carprice\\artifact\\experiment\\experiment.csv', accuracy=None, is_model_accepted=None)
+[2024-10-19 19:47:25,101]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:47:25] "GET /train HTTP/1.1" 200 -
+[2024-10-19 19:47:25,111]^;INFO^;65^;configuration.py^;get_data_ingestion_config()^;Data Ingestion config: DataIngestionConfig(bucket_name='used-car-data-ineuron', object_name='cardekho_dataset.csv', local_file_name='used-car-data.csv', raw_data_dir='C:\\Users\\Asus\\Desktop\\FA\\PBL-5 BI TG\\used-car-price-prediction-using-ml-main\\carprice\\artifact\\data_ingestion\\2024-10-19-19-47-25\\raw_data', ingested_train_dir='C:\\Users\\Asus\\Desktop\\FA\\PBL-5 BI TG\\used-car-price-prediction-using-ml-main\\carprice\\artifact\\data_ingestion\\2024-10-19-19-47-25\\ingested_data\\train', ingested_test_dir='C:\\Users\\Asus\\Desktop\\FA\\PBL-5 BI TG\\used-car-price-prediction-using-ml-main\\carprice\\artifact\\data_ingestion\\2024-10-19-19-47-25\\ingested_data\\test')
+[2024-10-19 19:47:25,111]^;INFO^;16^;data_ingestion.py^;__init__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Ingestion log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+[2024-10-19 19:47:25,117]^;INFO^;8^;s3_operation.py^;download_from_s3()^;Downloading from S3 bucket: used-car-data-ineuron
+[2024-10-19 19:47:34,832]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:47:34] "GET /predict HTTP/1.1" 200 -
+[2024-10-19 19:47:40,031]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:47:40] "GET /saved_models HTTP/1.1" 200 -
+[2024-10-19 19:47:43,465]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:47:43] "GET /predict HTTP/1.1" 200 -
+[2024-10-19 19:47:44,261]^;INFO^;222^;configuration.py^;get_training_pipeline_config()^;Training pipleine config: TrainingPipelineConfig(artifact_dir='C:\\Users\\Asus\\Desktop\\FA\\PBL-5 BI TG\\used-car-price-prediction-using-ml-main\\carprice\\artifact')
+[2024-10-19 19:47:44,285]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:47:44] "GET /train HTTP/1.1" 200 -
+[2024-10-19 19:47:59,413]^;INFO^;102^;data_ingestion.py^;__del__()^;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Ingestion log completed.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
+
+
+[2024-10-19 19:47:59,421]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:47:59] "GET /update_model_config HTTP/1.1" 200 -
+[2024-10-19 19:48:05,716]^;INFO^;194^;app.py^;render_log_dir()^;req_path: logs
+[2024-10-19 19:48:05,727]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:48:05] "GET /logs HTTP/1.1" 200 -
+[2024-10-19 19:48:07,681]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:48:07] "GET /artifact HTTP/1.1" 200 -
+[2024-10-19 19:48:09,021]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:48:09] "GET /saved_models HTTP/1.1" 200 -
+[2024-10-19 19:48:10,201]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:48:10] "GET / HTTP/1.1" 200 -
+[2024-10-19 19:48:10,285]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:48:10] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+[2024-10-19 19:48:13,502]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:48:13] "GET /saved_models HTTP/1.1" 200 -
+[2024-10-19 19:48:16,781]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:48:16] "GET /saved_models HTTP/1.1" 200 -
+[2024-10-19 19:48:17,821]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:48:17] "GET / HTTP/1.1" 200 -
+[2024-10-19 19:48:17,871]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:48:17] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+[2024-10-19 19:48:24,103]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:48:24] "GET /view_experiment_hist HTTP/1.1" 200 -
+[2024-10-19 19:48:29,812]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:48:29] "GET /predict HTTP/1.1" 200 -
+[2024-10-19 19:48:30,061]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:48:30] "GET /predict HTTP/1.1" 200 -
+[2024-10-19 19:48:30,943]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:48:30] "GET /predict HTTP/1.1" 200 -
+[2024-10-19 19:49:13,881]^;ERROR^;838^;app.py^;log_exception()^;Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\FA\PBL-5 BI TG\used-car-price-prediction-using-ml-main\carprice\entity\carprice_predictor.py", line 78, in get_latest_model_path
+    latest_model_dir = os.path.join(self.model_dir, f"{max(folder_name)}")
+ValueError: max() arg is an empty sequence
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\FA\PBL-5 BI TG\used-car-price-prediction-using-ml-main\carprice\entity\carprice_predictor.py", line 87, in predict
+    model_path = self.get_latest_model_path()
+  File "C:\Users\Asus\Desktop\FA\PBL-5 BI TG\used-car-price-prediction-using-ml-main\carprice\entity\carprice_predictor.py", line 83, in get_latest_model_path
+    raise CarException(e, sys) from e
+carprice.exception.CarException: 
+        Error occured in script: 
+        [ C:\Users\Asus\Desktop\FA\PBL-5 BI TG\used-car-price-prediction-using-ml-main\carprice\entity\carprice_predictor.py ] at 
+        try block line number: [78] and exception block line number: [83] 
+        error message: [max() arg is an empty sequence]
+        
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\FA\PBL-5 BI TG\used-car-price-prediction-using-ml-main\venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Asus\Desktop\FA\PBL-5 BI TG\used-car-price-prediction-using-ml-main\venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Asus\Desktop\FA\PBL-5 BI TG\used-car-price-prediction-using-ml-main\venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Asus\Desktop\FA\PBL-5 BI TG\used-car-price-prediction-using-ml-main\venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\Asus\Desktop\FA\PBL-5 BI TG\used-car-price-prediction-using-ml-main\app.py", line 134, in predict
+    carprice_value = carprice_predictor.predict(X=carprice_df)
+  File "C:\Users\Asus\Desktop\FA\PBL-5 BI TG\used-car-price-prediction-using-ml-main\carprice\entity\carprice_predictor.py", line 92, in predict
+    raise CarException(e, sys) from e
+carprice.exception.CarException: 
+        Error occured in script: 
+        [ C:\Users\Asus\Desktop\FA\PBL-5 BI TG\used-car-price-prediction-using-ml-main\carprice\entity\carprice_predictor.py ] at 
+        try block line number: [87] and exception block line number: [92] 
+        error message: [
+        Error occured in script: 
+        [ C:\Users\Asus\Desktop\FA\PBL-5 BI TG\used-car-price-prediction-using-ml-main\carprice\entity\carprice_predictor.py ] at 
+        try block line number: [78] and exception block line number: [83] 
+        error message: [max() arg is an empty sequence]
+        ]
+        
+[2024-10-19 19:49:13,881]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:49:13] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-10-19 19:49:26,061]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:49:26] "GET /saved_models HTTP/1.1" 200 -
+[2024-10-19 19:49:27,351]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:49:27] "GET /saved_models HTTP/1.1" 200 -
+[2024-10-19 19:49:28,424]^;INFO^;222^;configuration.py^;get_training_pipeline_config()^;Training pipleine config: TrainingPipelineConfig(artifact_dir='C:\\Users\\Asus\\Desktop\\FA\\PBL-5 BI TG\\used-car-price-prediction-using-ml-main\\carprice\\artifact')
+[2024-10-19 19:49:28,432]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:49:28] "GET /train HTTP/1.1" 200 -
+[2024-10-19 19:49:29,951]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:49:29] "GET /update_model_config HTTP/1.1" 200 -
+[2024-10-19 19:49:31,813]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:49:31] "GET /artifact HTTP/1.1" 200 -
+[2024-10-19 19:49:32,601]^;INFO^;194^;app.py^;render_log_dir()^;req_path: logs
+[2024-10-19 19:49:32,601]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:49:32] "GET /logs HTTP/1.1" 200 -
+[2024-10-19 19:50:06,783]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:06] "GET /artifact HTTP/1.1" 200 -
+[2024-10-19 19:50:08,086]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:08] "GET /artifact/carprice/artifact HTTP/1.1" 200 -
+[2024-10-19 19:50:08,282]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:08] "GET /artifact/carprice/artifact/data_ingestion HTTP/1.1" 200 -
+[2024-10-19 19:50:09,177]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:09] "GET /artifact/carprice/artifact/data_ingestion/2024-10-19-19-47-25 HTTP/1.1" 200 -
+[2024-10-19 19:50:09,791]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:09] "GET /artifact/carprice/artifact/data_ingestion/2024-10-19-19-47-25/raw_data HTTP/1.1" 200 -
+[2024-10-19 19:50:11,501]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:11] "GET /artifact/carprice/artifact/data_ingestion/2024-10-19-19-47-25 HTTP/1.1" 200 -
+[2024-10-19 19:50:13,781]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:13] "GET /artifact/carprice/artifact/data_ingestion HTTP/1.1" 200 -
+[2024-10-19 19:50:14,461]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:14] "GET /artifact/carprice/artifact HTTP/1.1" 200 -
+[2024-10-19 19:50:15,471]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:15] "GET /artifact/carprice/artifact/data_ingestion HTTP/1.1" 200 -
+[2024-10-19 19:50:16,201]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:16] "GET /artifact/carprice/artifact/data_ingestion/2024-10-19-19-47-25 HTTP/1.1" 200 -
+[2024-10-19 19:50:17,054]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:17] "GET /artifact/carprice/artifact/data_ingestion HTTP/1.1" 200 -
+[2024-10-19 19:50:17,271]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:17] "GET /artifact/carprice/artifact HTTP/1.1" 200 -
+[2024-10-19 19:50:17,611]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:17] "[32mGET /artifact/carprice HTTP/1.1[0m" 308 -
+[2024-10-19 19:50:17,621]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:17] "GET /artifact HTTP/1.1" 200 -
+[2024-10-19 19:50:18,371]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:18] "GET /artifact/carprice/artifact HTTP/1.1" 200 -
+[2024-10-19 19:50:18,981]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:18] "GET /artifact/carprice/artifact/experiment HTTP/1.1" 200 -
+[2024-10-19 19:50:20,773]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:20] "GET /artifact/carprice/artifact/experiment/experiment.csv HTTP/1.1" 200 -
+[2024-10-19 19:50:33,873]^;INFO^;222^;configuration.py^;get_training_pipeline_config()^;Training pipleine config: TrainingPipelineConfig(artifact_dir='C:\\Users\\Asus\\Desktop\\FA\\PBL-5 BI TG\\used-car-price-prediction-using-ml-main\\carprice\\artifact')
+[2024-10-19 19:50:33,881]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:33] "GET /train HTTP/1.1" 200 -
+[2024-10-19 19:50:34,805]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:34] "GET /predict HTTP/1.1" 200 -
+[2024-10-19 19:50:35,984]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:35] "GET /update_model_config HTTP/1.1" 200 -
+[2024-10-19 19:50:52,577]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:52] "GET /view_experiment_hist HTTP/1.1" 200 -
+[2024-10-19 19:50:55,281]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:55] "GET / HTTP/1.1" 200 -
+[2024-10-19 19:50:55,406]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:50:55] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+[2024-10-19 19:51:01,731]^;INFO^;222^;configuration.py^;get_training_pipeline_config()^;Training pipleine config: TrainingPipelineConfig(artifact_dir='C:\\Users\\Asus\\Desktop\\FA\\PBL-5 BI TG\\used-car-price-prediction-using-ml-main\\carprice\\artifact')
+[2024-10-19 19:51:01,744]^;INFO^;97^;_internal.py^;_log()^;127.0.0.1 - - [19/Oct/2024 19:51:01] "GET /train HTTP/1.1" 200 -
